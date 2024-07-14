@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles.css";
 
 const Edit = () => {
   const [data, setData] = useState([]);
@@ -36,7 +36,8 @@ const Edit = () => {
         <h1 className="text-center">Edit User {id}</h1>
         <div className="d-flex justify-content-end mb-3">
           <Link to="/" className="btn btn-success">
-            Back
+            <i className="fas fa-chevron-left"></i>
+            Home
           </Link>
         </div>
         {data.map((student) => {
@@ -92,6 +93,7 @@ const Edit = () => {
               </div>
               <div className="d-flex justify-content-center">
                 <button type="submit" className="btn btn-warning">
+                  <i className="fas fa-check"></i>
                   Save
                 </button>
               </div>

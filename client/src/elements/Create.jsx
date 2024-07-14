@@ -33,6 +33,7 @@ const Create = () => {
         <h1 className="text-center mb-4">Add Student</h1>
         <div className="d-flex justify-content-end mb-3">
           <Link to="/" className="btn btn-success">
+          <i className="fas fa-chevron-left"></i>
             Home
           </Link>
         </div>
@@ -75,6 +76,7 @@ const Create = () => {
           </div>
           <div className="d-flex justify-content-center">
             <button type="submit" className="btn btn-warning">
+            <i className="fas fa-check"></i>
               Save
             </button>
           </div>
